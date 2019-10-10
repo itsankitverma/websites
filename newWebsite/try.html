@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Fjalla+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("img/image.jpg");
+            background-size: cover;
+            width: 100%;
+        }
+        h1 {
+            position: absolute;
+            color: white;
+            /* border-top: 2px;border-left: 2px;border-right: 2px; */
+            background-color: transparent;
+            top: 20px;
+            left: 10px;
+            /* border: 3px 3px 3px 3px burlywood; */
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .pos {
+            background-color: black;
+        }
+
+       
+        .nav {
+            background-color: rgba(13, 26, 21, 0.705);
+            padding: 17px 450px;
+
+        }
+        a {
+            border: none;
+            background-color: transparent;
+            padding: 10px 10px;
+            font-size: 18px;
+            text-decoration: none;
+            /* box-shadow: 1px 1px 1px 1px black; */
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        
+
+        .rp {
+            position: absolute;
+            /* background-color: rgb(185, 185, 87); */
+            visibility: hidden;
+            top: 55px;
+            left: 490px;
+        }
+
+        .rp a {
+            display: block;
+            color: rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0.575);
+
+        }
+        .rp a:hover {
+            /* background-color: rgb(255, 180, 0); */
+            color: #ffb400;
+            box-shadow: 2px 2px 2px 2px #ffb400;
+        }
+
+        .royal {
+            background-color: transparent;
+            display: inline-block;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+        }
+        /* .pos .rp a{
+            padding: 10px;
+            padding-right: 10px;
+            color: rgb(0, 0, 0);
+            
+        } */
+        
+
+        /* .pos {
+            display: inline-block;
+        } */
+
+        span div {
+            padding: 0 0;
+        }
+
+        .royl:hover span div {
+            visibility: visible;
+        }
+
+        .royl {
+            display: inline;
+        }
+        .newsa{
+            display:inline;
+        }
+        .news{
+            display: inline-block;
+        }
+        .newss{
+            background-color: rgba(0, 0, 0, 0.514);
+            display: block;
+            position: absolute;
+            visibility: hidden;
+            top: 55px;
+        }
+
+        .newsdiv a {
+            display: block;
+            color: rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0.514);
+           
+
+        }
+        .newsdiv a:hover {
+            /* background-color: rgb(255, 180, 0); */
+            color: #ffb400;
+            box-shadow: 2px 2px 2px 2px #ffb400;
+        }
+        .news:hover .newss .newsdiv {
+            visibility: visible;
+        }
+        .purload{
+            position: absolute;
+            /* float: right; */
+            top: 27px;
+            left: 1090px;
+            font-family: 'Big Shoulders Display', cursive;
+            font-family: 'Fjalla One', sans-serif;
+
+        }
+        .download{
+            padding: 8px;
+            background-color: #ffb300;
+            position: relative;
+            left: 20px;
+            color: black;
+        }
+        .download:hover{
+            background-color: #ffb300;
+            color: black;
+            transition: 0.5s;
+        }
+        .purchase{
+            padding: 8px;
+            background-color: #ffb400;
+            color: black
+        }
+        .purchase:hover{
+            background-color: #ffb300;
+            color: black;
+            transition: 0.5s;
+        }
+        footer {
+   position: fixed;
+   /* left: 0; */
+   padding: 55px 0;  
+   bottom: 0;
+   width: 100%;
+   background-color: rgba(10, 7, 7, 0.657);
+   color: white;
+   display: inline-block;
+   text-transform: capitalize;
+   /* text-align: center; */
+}
+footer .social{
+position: relative;
+top: -30px;
+left: 40px;
+display: block;
+}
+.yt{
+    position: relative;
+    height: 25px;
+    /* width: 0; */
+}
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <div class="nav">
+
+            <button><a href="">Home</a></button><span>
+                <div class="royl"><a href="" class="royal">RP</a>
+                    <span class="pos">
+                        <div class="rp">
+                            <a href="index.html">RoyalPass4</a>
+                            <a href+-="">RoyalPass5</a>
+                            <a href="">RoyalPass6</a>
+                            <a href="">RoyalPass7</a>
+                        </div>
+                    </span>
+                </div>
+
+                <div class="news"><a href="" class="newsa">News</a>
+                    <span class="newss">
+                            <div class="newsdiv">
+                                <a href="">NEWS</a>
+                                <a href="">FAQ</a>
+                            </div>
+                        </span>
+                </div>
+                <a href="">Events</a>
+                <a href="">Media</a>
+                <a href="">Esports</a>
+                <div class="purload">
+                        <a href="" class="purchase">Purchase</a>
+                        <a href="" class="download">Download</a>
+                </div>
+        </div>
+    </main>
+    <h1 id="cr">Personal Projects</h1>
+
+<footer class="footer">
+
+    <div class="social">
+        <a href="https://www.youtube.com/" target="_blank"><img src="img/youtube.png" alt="" class="yt"></a>
+        <a href="https://www.facebook.com/"><img src="img/fb.png" alt="" class="yt"></a>
+        <a href="https://www.twitter.com/"><img src="img/twiiter.png" alt="" class="yt"></a>
+        <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="" class="yt"></a>
+    </div>
+</footer>
+</body>
+
+</html>

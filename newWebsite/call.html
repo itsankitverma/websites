@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Place your kit's code here -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+        integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+        <style>
+            *{
+                margin:0;
+                padding: 0;
+            }
+        .outer{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            
+        }
+        i{
+            color: white;
+        }
+        .call{
+            height: 100px;
+            width: 100px;;
+            background-color: green;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .call:before{
+            content: "";
+            position: absolute;
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);;
+            border: 1px solid white;
+            border-radius: 50%;
+            animation: pulse 1.5s linear infinite;
+        }
+        .call:AFTER{
+            content: "";
+            position: absolute;
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);;
+            border: 1px solid white;
+            border-radius: 50%;
+            animation: pulse 1.5s linear infinite;
+            animation-delay: 0.4S;
+        }
+
+        @keyframes pulse {
+            0%{ transform: scale(0.5); opacity: 0; }
+            50%{  transform: scale(1); opacity: 1;}
+            100%{  transform: scale(1.4); opacity: 0;}
+        }
+
+        </style>
+
+
+</head>
+
+<body>
+    <!-- Ready to use Font Awesome. Activate interlock. Dynotherms - connected. Infracells - up. Icons are go! -->
+
+    <div class="outer">
+        <div class="call">
+            <i class="fas fa-phone fa-3x"></i>
+        </div>
+    </div>
+</body>
+
+</html>

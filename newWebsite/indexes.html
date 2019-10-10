@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .dropdown{
+            display: inline-block;
+            position: relative;
+            color: white;
+            margin-top: 20%;
+            margin-left: 45%;
+        }
+        .dropdown button{
+            background-color: deeppink;
+            border: none;
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+            transition: 0.5s;
+            border-radius: 50px;
+        }
+        .dropdown button:hover{
+            background-color: orange;
+        }
+        .dropdown div a{
+            text-decoration: none;
+            display: block;
+            padding: 17px;
+            color: black;
+            background-color: white;
+        }
+        .dropdown div{
+            box-shadow: 3px 3px 3px 3px gray;
+            visibility: hidden;
+            position: absolute;
+            color: white;
+        }
+        .dropdown:hover div{
+            visibility: visible;
+        }
+        .dropdown div a:hover {
+            background-color: tomato;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button>Hover Me</button>
+        <div>
+                <a href="">Hello1</a>
+                <a href="">Hello2</a>
+                <a href="">Hello3</a>
+        </div>
+    </div>
+</body>
+</html>
